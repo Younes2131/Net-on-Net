@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scripts.js">
+ <script src="scripts.js" defer></script>
+ <title>Net-On-Net</title>
+
+</head>
+<body>
+  <nav class="top--nav">
+    <ul class="top--navinner">
+      <li class="top--navitem1"><a href="#" class="top--navlink">Hitta Lagershop |</a></li>
+      <li class="top--navitem2"><a href="#" class="top--navlink">Kundservice</a></li>
+      <li class="top--navitem3"><a href="#" class="top--navlink">Privatperson |</a></li>
+      <li class="top--navitem4"><a href="#" class="top--navlink">Företag </a></li>
+    </ul>
+  </nav>
+ 
+  <header>
+    <div class="header--inner">
+      <img src="https://www.netonnet.se/Assets/Images/logos/netonnet.svg" class="top--logo">
+
+      <form class="search--form">
+        <div class="search--forminner">
+          <input type="text" id="search--input" placeholder="Search...">
+          <div class="search-results" id="searchResults"></div>
+          <button class="search--btn">
+            <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="Search icon">
+          </button>
+        </div>
+      </form>
+
+  <div class="header--login-kundvagn">
+    <div class="header--buttons">
+      <div class="header--button">
+        <button id="loginButton" class="circle-button">
+          <img src="https://www.netonnet.se/Assets/Images/Svg/user.svg" alt="Login icon">
+        </button>
+        <p>Logga in</p>
+      </div>
+      <div id="loginForm" class="login-form">
+        <div class="logga-in">
+          <form action="/handle_login" method="post">
+            
+            <label for="username">Användarnamn:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Lösenord:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Logga in">
+          </form>
+        </div>
+      </div>
+
+      <div class="header--button">
+        <button id="cartButton" class="circle-button">
+          <img src="https://www.netonnet.se/Assets/Images/Svg/shopping-cart.svg" alt="Cart icon">
+        </button>
+        <p>Kundvagn</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="shoppingCart" class="shopping-cart">
+    
+   <div class="kundvagn-header">
+  <img src="https://www.netonnet.se/Assets/Images/Svg/shopping-cart.svg" alt="">
+  <p>Kundvagn</p>
+  </div>
+<div class="vagnen"><p>Kundvagnen är tom</p></div>
+
+<div class="product-container1">
+<div class="product-card">
+  <img src="product1.jpg" alt="Product 1">
+  <div class="product-info">
+    <h3>Product 1</h3>
+    <p>Rating: 4.5</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button>Lägg till</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="product2.jpg" alt="Product 2">
+  <div class="product-info">
+    <h3>Product 2</h3>
+    <p>Rating: 4.0</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button>Lägg till</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="product3.jpg" alt="Product 3">
+   <div class="product-info">
+    <h3>Product 3</h3>
+    <p>Rating: 4.8</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button>Lägg till</button>
+    </div> 
+   </div>
+  </div>
+ </div>
+</div>
+
+
+</header>
+<nav class="main--nav">
+  <div class="overlay" id="overlay" onclick="closeDropdowns()"></div>
+  <ul class="main--navinner">
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="surfplatta-link">Dator & Surfplatta</a>
+      <div class="container-main-nav" id="surfplatta-dropdown">
+        <div class="X-for-bar" id="close-dropdown" onclick="closeDropdowns()">X</div>
+        <div class="top-bild-x">
+        <div class="category-image"></div>
+        <div class="text-ovan"><h1>dator och surfplatta</h1></div>
+        <div class="text-till-j"><h2>just nu
+        </h2></div>
+      </div>
+      <div class="nav-bar-bild"></div>
+      <div class=""></div>
+      <div class="dropdown-column">
+
+        <h3>Kategorier</h3>
+
+          <ul>
+            <li><a href="#">Se allt i Dator& Surfplatta</a></li>
+            <li><a href="nav-laptop/latop.html">Laptop</a></li>
+            <li><a href="#">Stationära datorer</a></li>
+            <li><a href="#">Surfplattor</a></li>
+            <li><a href="#">Datorskärmar</li>
+            <li><a href="#">Nätverk</a></li>
+            <li><a href="#">Skrivare & Scanner</a></li>
+            <li><a href="#">Datortillbehör</a></li>
+            <li><a href="#">Programvara</a></li>
+          </ul>
+        </div>
+        <div class="dropdown-knapp">
+            <button >Outlet</button>
+            <button >Nyheter</button>
+            <button >Topp 10</button>
+        </div>
+      </div>
+    </li>
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="datorkomponenter-link">Datorkomponenter</a>
+      <div class="container-main-nav" id="datorkomponenter-dropdown">
+        <p>Drop-down för Datorkomponenter</p>
+      </div>
+    </li>
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="gaming-link">Gaming</a>
+      <div class="container-main-nav" id="gaming-dropdown">
+        <p>Drop-down för Gaming</p>
+      </div>
+    </li>
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="hem-fritid-link">Hem & Fritid</a>
+      <div class="container-main-nav" id="hem-fritid-dropdown">
+        <p>Drop-down för Hem & Fritid</p>
+      </div>
+    </li>
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="tv-link">TV</a>
+      <div class="container-main-nav" id="tv-dropdown">
+        <p>Drop-down för TV</p>
+      </div>
+    </li>
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="ljud-link">Ljud</a>
+      <div class="container-main-nav" id="ljud-dropdown">
+        <p>Drop-down för Ljud</p>
+      </div>
+    </li>
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="mobil-smartwatch-link">Mobil & Smartwatch</a>
+      <div class="container-main-nav" id="mobil-smartwatch-dropdown">
+        <p>Drop-down för Mobil & Smartwatch</p>
+      </div>
+    </li>
+    <li class="main--navitem">
+      <a href="#" class="main--navlink" id="vitvaror-link">Vitvaror</a>
+      <div class="container-main-nav" id="vitvaror-dropdown">
+        <p>Drop-down för Vitvaror</p>
+      </div>
+    </li>
+   <div class="main-nav-left">
+    <li class="main--navitem1"><a href="#" class="main--navlink1">Outlet</a></li>
+    <li class="main--navitem"><a href="#" class="main--navlink">Tjänster</a></li>
+    <li class="main--navitem"><a href="#" class="main--navlink">Varumärken</a></li>
+  </ul>
+</div>
+</nav>
+
+
+
+<main>
+<div class="container-all">
+  <div class="container-all--inner">
+    <div class="container">
+      <div class="wrapper">
+        <div class="products">
+          <ul>
+            <li class="product-card1" id="product1">
+              <div class="product-container">
+                <img src="https://www.netonnet.se/GetFile/BoxImageLarge/(25421)_1_Normal_Original.webp" alt="">
+              </div>
+            </li>
+            <li class="product-card1" id="product2">
+              <div class="product-container">
+                <img src="https://www.netonnet.se/GetFile/BoxImageLarge/(25404)_2_Normal_Original.webp" alt="">
+              </div>
+            </li>
+            <li class="product-card1" id="product3">
+              <div class="product-container">
+                <img src="https://www.netonnet.se/GetFile/BoxImageLarge/(23472)_5_Normal_Original.webp" alt="">
+              </div>
+            </li>
+            <li class="product-card1" id="product4">
+              <div class="product-container">
+                <img src="https://www.netonnet.se/GetFile/BoxImageLarge/(25462)_1_Normal_Original.webp" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="click2"><span class="left-arrow"></span></div>
+      <div id="click"><span class="right-arrow"></div>
+    </div>
+  <script src="script.js"></script>
+
+<div class="img--box">
+  <a href="#" class="image-link" title="Veckans sänkta lagerpriser">
+    <img src="https://www.netonnet.se/GetFile/BoxImageLarge/(22653)_2_Normal_Original.webp" alt="Veckans sänkta lagerpriser">
+  </a>
+  <a href="#" class="image-link" title="Bra att ha hemma">
+    <img src="https://www.netonnet.se/GetFile/BoxImageLarge/(25457)_1_Normal_Original.webp" alt="Bra att ha hemma">
+  </a>
+  <a href="#" class="image-link" title="PowerBanks">
+    <img src="https://www.netonnet.se/GetFile/BoxImageLarge/(25455)_1_Normal_Original.webp" alt="PowerBanks">
+  </a>
+</div>
+
+
+<div class="liten-text"> <h3>Populärt på net on net      visa mer </h3> </div>
+
+
+
+<div class="container1">
+  <div class="box1">
+    <img src="https://www.netonnet.se/GetFile/SectionBoxIcon/(8885)_14_Normal_Large.webp" alt="Bild 1" />
+  </div>
+  <div class="box2">
+    <img src="https://www.netonnet.se/GetFile/SectionBoxIcon/(8889)_7_Normal_Large.webp" alt="Bild 2" />
+  </div>
+  <div class="box3">
+    <img src="https://www.netonnet.se/GetFile/SectionBoxIcon/(8881)_20_Normal_Large.webp" alt="Bild 3" />
+  </div>
+  <div class="box4">
+    <img src="https://www.netonnet.se/GetFile/SectionBoxIcon/(9087)_11_Normal_Large.webp" alt="Bild 4" />
+  </div>
+  <div class="box5">
+    <img src="https://www.netonnet.se/GetFile/SectionIcon/(18426)_5_Normal_Large.webp" alt="Bild 5" />
+  </div>
+  <div class="box6">
+    <img src="https://www.netonnet.se/GetFile/SectionBoxIcon/(14465)_3_Normal_Large.webp" alt="Bild 6" />
+  </div>
+ </div>
+</div>
+
+<div id="custom-slider"></div>
+<div class="wappan">
+<div id="slide" class="products-inner"></div>
+<div id="click-8"><span class="left--arrow"></span></div>
+<div id="click-9"><span class="right--arrow"></span></div>
+</div>
+</div>
+
+
+
+<div class="reklam-holder">
+<div class="container-reklam1"></div>
+<div class="container-reklam2"></div>
+</div>
+
+<div class="box--for-img">
+  <img class="box-img--inner" src="https://www.netonnet.se/files/A_kampen_for_laga_priser/SE/Tjanster/1766x300_Delbetalning_contentbox_desktop_Well_SE.jpg" alt="">
+  <div>
+</div>
+</main>
+<!--  
+<footer>
+  <div class="footer--top">
+    <div class="footer--topinner">
+      <div class="text-container">
+        <a href="#">Text 1</a>
+        <a href="#">Text 2</a>
+        <a href="#">Text 3</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer--bottom">
+  </div>
+</footer> -->
+
+</body>
+</html>

@@ -1,0 +1,755 @@
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --lightGray10: #f3f3f3;
+    --lightGray30:#f2f2f2;
+    --lightGray50: #e6e6e6;
+ 
+  }
+ 
+ 
+ 
+ 
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+ 
+ 
+ 
+ 
+  body{
+    font-family: open sans-serif;
+    background: #eae4e44d;
+    width: 2560px;  /* behöver ändras till 1900 till skol datan*/
+  }
+
+
+ 
+  main {  
+   
+    max-width: 900px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin:0 auto;
+    position: relative;
+    left: 3%;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+  /* TOP NAVIGERINGEN */
+  .top--nav {
+    padding: 6px;
+    background-color: #015582;
+  }
+ 
+ 
+  .top--navinner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+ 
+  }
+ 
+  .top--navitem2 {
+    margin-right: 670px;
+  }
+ 
+  .top--navitem1, .top--navitem2 {
+    margin-left: 25px;
+  }
+ 
+ 
+ 
+  .top--navitem3 {
+    margin-right: 25px;
+  }
+ 
+ 
+ 
+  .top--navitem4 {
+    margin-right: -10px;
+  }
+ 
+ 
+ 
+ 
+  .top--navlink {
+    text-decoration: none;
+    color:#c3c3c3;
+    font-weight: bold;
+    font-size: 11px;
+  }
+ 
+ 
+ 
+ 
+  .top--navlink:hover {
+    text-decoration: underline;
+    color: #ca1c1c;
+  }
+ 
+ 
+ 
+ 
+ 
+  /*header*/
+  header, .main--nav {
+    width: 100%;
+  background-color: #eae4e44d;
+  }
+ 
+ 
+ 
+ 
+  .header--inner, .main--navinner{
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-width: 1280px;
+ 
+ 
+  }
+ 
+ 
+ 
+ 
+ 
+  .header--inner{
+   position: relative;
+    padding: 8px 0;
+ 
+  }
+ 
+ 
+ 
+ 
+  .top--logo{
+  position: absolute;
+    /*width: 100%;*/
+    max-height: 25px;
+    object-fit: contain;
+    margin-left: -400px;
+ 
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .search--form {
+    display: flex;
+    align-items: center;
+    margin-left: 15rem;
+    background: var(--white);
+    border: 1px solid #eae4e44d;
+    border-radius: 50px;
+    line-height: 30px;
+    width: 450px;
+  }
+  .search--forminner {
+    display: flex;
+    width: 100%;
+    height: 35px;
+ 
+  }
+ 
+ 
+  #search--input {
+    flex: 1;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    height: 29px;
+    margin: 4px;
+    width: 500px ;
+ 
+ 
+  }
+ 
+ 
+ 
+ 
+ 
+  .search--btn {
+    display: flex;
+    margin: -5px;
+    height: 36px;
+    width: 36px;
+    background: #0096db; ;
+    border: none;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 22px;  /*storleken på knappen!!!*/
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+ 
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+  .search--btn:hover {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.1);
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+  .search--btn img {
+    width: 25px;
+    height: 25px;
+    margin: -13px;
+    color: var(--white);
+  }
+ 
+ 
+ 
+  .header--login-kundvagn{
+    display:flex;
+    min-width:420px;
+    justify-content: start;
+  }
+ 
+ 
+  .header--buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 350px;
+    margin-bottom: -0px;
+   
+   
+  }
+ 
+ 
+ 
+ 
+  .header--button {
+   
+    text-align: center;
+    transition: transform 0.3s;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .circle-button {
+    background-color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+ 
+ 
+ 
+  .circle-button {
+    background-color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+ 
+  .shopping-cart {
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 45%;
+  z-index: 1;
+    
+  }
+ 
+ 
+  .logga-in{ width: 400px;
+  height: 400px;
+  background-color: orange;
+  z-index: 1;
+  }
+ 
+  .login-form {
+ 
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 45%;
+  z-index: 1;
+  }
+ 
+ 
+  .shoppa{
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    z-index: 1;
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .circle-button img {
+    width: 20px;
+    height: 20px;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+  .header--button p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .header--button:hover,
+  .circle-button:hover {
+    transform: scale(1.1);
+  }
+ 
+ 
+ 
+ 
+  .circle-button:hover {
+    background-color: #ca1c1c;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /* NAVIGERINGEN */
+ 
+ 
+ 
+ 
+  .main--nav {
+    box-shadow: var(--black);
+    background-color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    border-top: 1px solid var(--lightGray50);
+    border-bottom: 1px  var(--black);
+    margin-bottom: 20px;
+    z-index: 1; 
+  }
+ 
+ 
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+ 
+ 
+ 
+ 
+ 
+  .main--navinner{
+ 
+    list-style: none;
+  height: 40px;
+  }
+ 
+ 
+  .main--navlink1 {
+    padding-left: 363px;
+  }
+ 
+ 
+ 
+ 
+  .main--navlink,
+  .main--navlink1 {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+ 
+ 
+ 
+ 
+  .main--navlink:hover,
+  .main--navlink1:hover {
+    color: rgb(22, 193, 250);
+  }
+ 
+ 
+ 
+  .main--navitem:hover .container-main-nav,
+  .main--navitem:hover .overlay {
+    display: block;
+  }
+ 
+ 
+  .top-bild-x{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    border-bottom: 1px solid black;
+  }
+ 
+ 
+ 
+ 
+ 
+  .category-image {
+    background: url('https://www.netonnet.se/GetFile/SectionBoxIcon/(8889)_7_Normal_Large.webp') no-repeat center center / cover, #fff;
+    border-bottom: 1px solid black;
+    width: 100px;
+    height: 100px;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .container-main-nav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    width: 1168px;
+    height: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 3;
+    left: 47%;
+    transform: translateX(-50%);
+    border-radius: 0 0 10px 10px;
+  }
+ 
+  .dropdown-column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+ 
+  .dropdown-column h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+ 
+  .dropdown-column ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(22, 204, 83);
+  }
+ 
+  .dropdown-column ul li a {
+    display: block;
+    padding: px 0;
+    color: #333;
+    text-decoration: none;
+    line-height: 2.5;
+    transition: 1s;
+  }
+ 
+ 
+ 
+ 
+  .dropdown-column ul li a:hover {
+    color: #1a5fdf;
+    background-color: #89ceee;
+ 
+  }
+ 
+ 
+  .dropdown-knapp {
+    display: flex;
+    flex-direction: row;
+    background-color: #1100fc;
+   
+  }
+ 
+ 
+ 
+  .dropdown-knapp button {
+    display: flex;
+    margin-bottom: 5px; 
+    padding: 10px; 
+    background-color: #818181; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  
+   
+  }
+ 
+  .dropdown-knapp button:hover {
+    background-color: #e0e0e0; 
+  }
+ 
+ 
+ 
+ 
+
+  .main--navlink {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+  }
+ 
+  .main--navlink:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background-color: #000000; 
+    bottom: -2px; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease-in-out; 
+  }
+ 
+  .main--navlink:hover:after,
+  .main--navlink:focus:after {
+    transform: scaleX(1); 
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+.wrapper {
+  width: 900px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 20px auto;
+  height: 350px;
+}
+
+
+li {
+  display: inline-block;
+}
+
+
+.product-container {
+  padding: 0;
+  background: #ffffff;  
+  width: 825px;
+  height: 378px;
+}
+
+
+img {
+  width: 900px; 
+  height: auto; 
+}
+
+
+.wrapper::-webkit-scrollbar {
+  height: 7px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+#click2,
+#click {
+  position: absolute;
+  top: 16%;
+  width: 35px;
+  height: 80px;
+  background: #0096db;
+  border: 1px solid #888;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#click2 {
+  left: 0%;
+  border-left: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#click {
+  right: 0%;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#click:hover,
+#click2:hover {
+  opacity: 1;
+}
+
+
+.right-arrow,
+.left-arrow {
+  background-position: 50% 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 12px 20px;
+}
+
+.right-arrow {
+  background-image: url(https://www.netonnet.se/Assets/Images/promoslider/arrow_right_hover.png);
+}
+
+.left-arrow {
+  background-image: url(https://www.netonnet.se/Assets/Images/promoslider/arrow_left_hover.png);
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .product-container {
+    width: 100%;
+    max-width: 100%; 
+  }
+}
+
+
+.right-arrow:hover,
+.left-arrow:hover {
+  opacity: 0.9; 
+}
+
+ 
+ 
+
+
+
+  .long-reklam {
+    
+    width: 100%;
+    height: 150px;;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  
+   .long-reklam img {
+    
+    width: 100%;
+    height: 100px;;
+    background-color: rebeccapurple;
+  }
+
+  
+
+
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+    top: 14%;
+  
+    
+    width: 255px;
+    height: 1100px;
+    background-color: rgb(87, 182, 223);
+
+  }
+
+
+
+
+
